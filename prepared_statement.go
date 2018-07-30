@@ -8,12 +8,7 @@ import (
 // EscapeString sql-escapes a string.
 func EscapeString(value string) string {
 	replace := [][2]string{
-		{`\`, `\\`},
-		{`\0`, `\\0`},
-		{`\n`, `\\n`},
-		{`\r`, `\\r`},
-		{`"`, `\"`},
-		{`'`, `\'`},
+		{`'`, `''`},
 	}
 
 	for _, val := range replace {
